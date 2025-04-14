@@ -2,7 +2,8 @@
 # Project Description
 This project demonstrates the use of Terraform to automate the provisioning of AWS infrastructure.
 
-The setup includes the creation of an EC2 instance, automated web server deployment, and the secure storage of the Terraform state file in an S3 bucket. 
+The setup includes the creation of an EC2 instance, automated web server deployment, 
+and the secure storage of the Terraform state file in an S3 bucket. 
 
 The infrastructure is fully scalable, modular, and emphasizes best practices for Infrastructure as Code (IaC).
 
@@ -29,30 +30,37 @@ Usage
 bash
 Copy code
 git clone https://github.com/Pepuhove/IaC_Project.git
+
 cd IaC_Project
-2. Initialize Terraform
+
+3. Initialize Terraform
 bash
 Copy code
 terraform init
-3. Review the Terraform Plan
+4. Review the Terraform Plan
 bash
 Copy code
 terraform plan
-4. Apply the Configuration
+5. Apply the Configuration
 bash
 Copy code
 terraform apply
-5. Access the Web Server
+6. Access the Web Server
 Once the setup is complete, you can access the web server using the Public IP of the provisioned EC2 instance.
 File Structure
 bash
 Copy code
 .
 ├── main.tf            # Main Terraform configuration file
+
 ├── variables.tf       # Input variables
+
 ├── outputs.tf         # Output definitions
+
 ├── statefile.tf       # Backend configuration for storing state in S3
+
 ├── README.md          # Project documentation
+
 # Key Highlights
 EC2 Instance Setup: 
 The EC2 instance is launched using a custom AMI and security group configurations for enhanced performance and security.
